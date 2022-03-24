@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
     <title>Form - Homework</title>
 </head>
 
@@ -19,89 +23,159 @@
 
     <div class="main-container">
         <form action="#" class="pizza-form">
-            <legend>Personalized Pizza</legend>
-            <div class="name-container">
+            <legend class="headline"><h1>Personalized Pizza
+            </h1>
+            <img src="./imgs/icons/pizza-icon.png" alt="pizza icon">
+        </legend>
+
+            <!-- Name field -->
+
+            <fieldset class="name container">
                 <fieldset class="name-fieldset">
-                    <p class="name">Name</p>
+                    <h2 class="name">Name</h2>
                 </fieldset>
                 <fieldset class="name-input-fieldset">
                     <label for="name">
                         <input type="text" name="name" id="name" required>
                     </label>
                 </fieldset>
-            </div>
+            </fieldset>
 
             <!-- Select main topping -->
-            <fieldset class="pizza-toppings-container">
-                <p class="topping-para">Pizza Topping</p>
-                <label for="supreme">Supreme
-                    <input type="radio" name="pizza-type" id="supreme">
-                </label>
-                <label for="vegetarian">Vegetarian
-                    <input type="radio" name="pizza-type" id="vegetarian">
-                </label>
-                <label for="pepperoni-main">Pepperoni
-                    <input type="radio" name="pizza-type" id="pepperoni-main">
-                </label>
+            <fieldset class="pizza-main-topping container">
+                <fieldset class="topping-para-fieldset">
+                    <h2 class="topping-para">Pizza Topping</h2>
+                </fieldset>
+
+
+                <fieldset class="pizza-topping-fieldset">
+
+                    <label for="supreme">
+                        <input type="radio" name="pizza-type" id="supreme">Supreme
+                    </label>
+
+                    <label for="vegetarian">
+                        <input type="radio" name="pizza-type" id="vegetarian">Vegetarian
+                    </label>
+
+                    <label for="pepperoni-main">
+                        <input type="radio" name="pizza-type" id="pepperoni-main">Pepperoni
+                    </label>
+                </fieldset>
+
+
             </fieldset>
 
             <!-- Dropdown select pizza base -->
-            <fieldset class="drop-down-container">
-                <p class="pizza-base-para">Pizza Base</p>
-                <select name="pizza-base" id="drop-down" class="drop-down" required>
-                    <option selected disabled value="Select pizza base">Select pizza base</option>
-                    <option value="tomato">Tomato base</option>
-                    <option value="cream base">Cream base</option>
-                    <option value="Gluten-free">Gluten-free base</option>
-                </select>
+            <fieldset class="drop-down container">
+                <fieldset class="pizza-base-para-fieldset">
+                    <h2 class="pizza-base-para">Pizza Base</h2>
+
+                </fieldset>
+
+                <fieldset class="pizza-base-dropdown-fieldset">
+                    <select name="pizza-base" id="drop-down" class="drop-down" required>
+                        <option selected disabled value="Select pizza base">Select pizza base</option>
+                        <option value="tomato">Tomato base</option>
+                        <option value="cream base">Cream base</option>
+                        <option value="Gluten-free">Gluten-free base</option>
+                    </select>
+                </fieldset>
             </fieldset>
 
 
             <!-- Extra toppings -->
 
-            <fieldset class="checkbox-container">
-                <label for="pepperoni topping"> Pepperoni
-                    <input type="checkbox" name="pepperoni topping" id="pepperoni topping">
-                </label>
+            <fieldset class="checkbox container">
+                <fieldset>
+                    <h2>Extra toppings</h2>
+                </fieldset>
 
-                <label for="extra-cheese topping"> Xtra cheese
-                    <input type="checkbox" name="extra-cheese topping" id="extra-cheese topping">
-                </label>
+                <fieldset class="topping-fieldsets-container">
 
-                <label for="ham topping">Ham
-                    <input type="checkbox" name="ham topping" id="ham topping">
-                </label>
+                    <fieldset class="pepperoni topping-fieldset">
+                        <label for="pepperoni topping">
+                            <img src="./imgs/icons/pepperoni-icon.png" alt="pepperoni icon">Pepperoni
+                            <input type="checkbox" name="pepperoni topping" id="pepperoni topping">
+                        </label>
+                    </fieldset>
 
-                <label for="pineapple topping">Pineapple
-                    <input type="checkbox" name="pineapple topping" id="pineapple topping">
-                </label>
+                    <fieldset class="xtra-cheese topping-fieldset">
+                        <label class="topping-label" for="extra-cheese topping">
+                            <img src="./imgs/icons/cheese-icon.png" width="64" height="64" alt="cheese icon">Xtra cheese
+                            <input type="checkbox" name="extra-cheese topping" id="extra-cheese topping">
+                        </label>
+                    </fieldset>
 
-                <label for="onion topping">Onion
-                    <input type="checkbox" name="onion topping" id="onion topping">
-                </label>
+                    <fieldset class="ham topping-fieldset">
+                        <label for="ham topping">
+                            <img src="./imgs/icons/ham-icon.png" alt="ham icon"> Ham
+                            <input type="checkbox" name="ham topping" id="ham topping">
+                        </label>
+                    </fieldset>
 
-                <label for="bacon topping">Bacon
-                    <input type="checkbox" name="bacon topping" id="bacon topping">
-                </label>
+                    <fieldset class="pineapple topping-fieldset">
+                        <label for="pineapple topping">
+                            <img src="./imgs/icons/pineapple-icon.png" alt="pineapple icon">
+                            Pineapple
+                            <input type="checkbox" name="pineapple topping" id="pineapple topping">
+                        </label>
+                    </fieldset>
 
-                <label for="sausage topping">Sausage
-                    <input type="checkbox" name="sausage topping" id="sausage topping">
-                </label>
+                    <fieldset class="onion topping-fieldset">
+                        <label for="onion topping">
+                            <img src="./imgs/icons/onion-icon.png" alt="onion icon">
+                            Onion
+                            <input type="checkbox" name="onion topping" id="onion topping">
+                        </label>
+                    </fieldset>
 
-                <label for="olives topping">Olives
-                    <input type="checkbox" name="olives topping" id="olives topping">
-                </label>
+                    <fieldset class="bacon topping-fieldset">
+                        <label for="bacon topping">
+                            <img src="./imgs/icons/bacon-icon.png" alt="bacon icon">
+                            Bacon
+                            <input type="checkbox" name="bacon topping" id="bacon topping">
+                        </label>
+                    </fieldset>
 
-                <label for="peppers topping">Peppers
-                    <input type="checkbox" name="peppers topping" id="peppers topping">
-                </label>
+                    <fieldset class="sausage topping-fieldset">
+                        <label for="sausage topping">
+                            <img src="./imgs/icons/sausage-icon.png" alt="sausage icon">
+                            Sausage
+                            <input type="checkbox" name="sausage topping" id="sausage topping">
+                        </label>
+                    </fieldset>
 
-                <label for="mushrooms topping">Mushrooms
-                    <input type="checkbox" name="mushrooms topping" id="mushrooms topping">
-                </label>
+                    <fieldset class="olive topping-fieldset">
+                        <label for="olives topping">
+                            <img src="./imgs/icons/olive-icon.png" alt="olives icon">
+                            Olives
+                            <input type="checkbox" name="olives topping" id="olives topping">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="pepper topping-fieldset">
+                        <label for="peppers topping">
+                            <img src="./imgs/icons/pepper-icon.png" alt="green bell pepper icon">
+                            Peppers
+                            <input type="checkbox" name="peppers topping" id="peppers topping">
+                        </label>
+                    </fieldset>
+
+                    <fieldset class="mushroom topping-fieldset">
+                        <label for="mushrooms topping">
+                            <img src="./imgs/icons/mushroom-icon.png" alt="mushroom icon">
+                            Mushrooms
+                            <input type="checkbox" name="mushrooms topping" id="mushrooms topping">
+                        </label>
+                    </fieldset>
+
+                </fieldset>
             </fieldset>
 
+            <!-- Delivery intructions -->
             <fieldset class="textarea-container">
+               <h2>Delivery instructions</h2>
                 <textarea name="delivery-instructions" id="delivery-instructions" cols="30" rows="5"
                     maxlength="120"></textarea>
             </fieldset>
