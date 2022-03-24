@@ -29,30 +29,32 @@ body {
     background-color: var(--dark-blue);
 }
 
-h2{
+h2 {
     margin: 0.5rem;
 }
 
 /* Name */
 
 #name,
-#delivery-instructions{
-    font-size: 1rem;
+#delivery-instructions {
+    font-size: 1.25rem;
     border: none;
     width: 50%;
     border-radius: 0.5rem;
     padding: 0.25rem;
     border: 2px solid white;
 }
-.headline{
+
+.headline {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
 .main-container {
-    padding: 1rem;
+    padding: 0.75rem;
     border-radius: 1rem;
+    border: 2px solid white;
     background-color: darkgoldenrod;
 }
 
@@ -76,21 +78,28 @@ h2{
 
 }
 
-fieldset{
+fieldset {
     border: none;
 }
 
 /* Pizza main topping */
-.pizza-main-topping{
+.pizza-main-topping {
 
     display: flex;
 
 }
+.supreme-label,
+.vegetarian-label,
+.pepperoni-label{
+    font-size: 1.25rem;
+}
 
 
 /* Pizza base */
-#drop-down{
-    font-size: 1rem;
+#drop-down {
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
 }
 
 /* pizza extra topping */
@@ -143,4 +152,24 @@ fieldset{
 #delivery-instructions {
     width: 100%;
     resize: none;
+}
+
+/* Form btns */
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form-btn {
+    background-color: coral;
+    padding:
+        0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+}
+
+
+/* hover */
+.form-btn:hover {
+    background-color: brown;
 }

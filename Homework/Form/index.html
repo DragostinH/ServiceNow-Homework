@@ -23,10 +23,11 @@
 
     <div class="main-container">
         <form action="#" class="pizza-form">
-            <legend class="headline"><h1>Personalized Pizza
-            </h1>
-            <img src="./imgs/icons/pizza-icon.png" alt="pizza icon">
-        </legend>
+            <legend class="headline">
+                <h1>Personalized Pizza
+                </h1>
+                <img src="./imgs/icons/pizza-icon.png" alt="pizza icon">
+            </legend>
 
             <!-- Name field -->
 
@@ -50,15 +51,15 @@
 
                 <fieldset class="pizza-topping-fieldset">
 
-                    <label for="supreme">
+                    <label class="supreme-label" for="supreme">
                         <input type="radio" name="pizza-type" id="supreme">Supreme
                     </label>
 
-                    <label for="vegetarian">
+                    <label class="vegetarian-label" for="vegetarian">
                         <input type="radio" name="pizza-type" id="vegetarian">Vegetarian
                     </label>
 
-                    <label for="pepperoni-main">
+                    <label class="pepperoni-label" for="pepperoni-main">
                         <input type="radio" name="pizza-type" id="pepperoni-main">Pepperoni
                     </label>
                 </fieldset>
@@ -175,18 +176,14 @@
 
             <!-- Delivery intructions -->
             <fieldset class="textarea-container">
-               <h2>Delivery instructions</h2>
+                <h2>Delivery instructions</h2>
                 <textarea name="delivery-instructions" id="delivery-instructions" cols="30" rows="5"
                     maxlength="120"></textarea>
             </fieldset>
 
             <fieldset class="btn-container">
-                <label for="btns">
-                    <input type="submit" value="Submit">
-                </label>
-                <label for="btns">
-                    <input type="reset" value="Reset">
-                </label>
+                    <input class="form-btn" type="submit" value="Submit">
+                    <input class="form-btn" type="reset" value="Reset">
             </fieldset>
 
         </form>
